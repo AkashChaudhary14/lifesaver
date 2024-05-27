@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Saver</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        input {
+            box-sizing: border-box;
+            border: 1px solid black;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner" id="donate-banner">
+        <div class="navbar">
+            <img src="./../images/logo1.png" class="logo">
+            <ul>
+                <li><a href="./../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html">Donate blood</a></li>
+                <li><a href="request.html">Request blood</a></li>
+            </ul>
+        </div>
+        <div class="content" style="top: 40%;">
+            <h1>Donor Registration</h1>
+        </div>
+    </div>
+    <div class="peronsal-info">
+        <h2 class="title">Personal Info</h2>
+        <form action="" id="personal-info">
+            <div class="form-items">
+                <div class="left">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required placeholder="Name">
+
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob">
+
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender" required>
+                        <option value="" disabled selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required placeholder="E-mail">
+
+                </div>
+
+                <div class="right">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="mobile" required placeholder="Phone Number">
+
+                    <label for="province">Province</label>
+                    <select name="province" id="province" required>
+                        <option value="" disabled selected>Select your province</option>
+                        <option value="1">Province 1</option>
+                        <option value="2">Province 2</option>
+                        <option value="3">Province 3</option>
+                        <option value="4">Province 4</option>
+                        <option value="5">Province 5</option>
+                        <option value="6">Province 6</option>
+                        <option value="7">Province 7</option>
+                    </select>
+
+                    <label for="city">City</label>
+                    <select name="city" id="city" disabled required>
+                        <option value="" disabled selected>Select your city</option>
+                    </select>
+
+                    <label for="name">Occupation(if any)</label>
+                    <input type="text" id="name" name="name" autocomplete="name" placeholder="Name">
+
+                </div>
+            </div>
+            <button type="submit" id="next">Next</button>
+        </form>
+
+    </div>
+    <br>
+    <div class="medical-info">
+        <h2 class="title">Medical Info</h2>
+        <form action="" id="medical-info">
+            <div class="form-items">
+                <div class="left">
+                    <label for="blood-group">
+                        Blood Group
+                    </label>
+
+                    <select name="blood-group" id="blood-group" required>
+                        <option value="" disabled selected>Select your blood group</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+
+                    <label for="last-donation-date">Last Donation Date</label>
+                    <input type="date" name="last-donation-date" id="last-donation-date">
+
+                    <label for="disease">Any Diseease</label>
+                    <select name="disease" id="disease" required>
+                        <option value="" disabled selected>Any Disease</option>
+                        <option value="Disease 1">Disease 1</option>
+                        <option value="Disease 2">Disease 2</option>
+                    </select>
+
+                    <label for="cardiac">Cardiac</label>
+                    <select name="cardiac" id="cardiac" required>
+                        <option value="" disabled selected>Cardiac</option>
+                        <option value="Disease 1">Disease 1</option>
+                        <option value="Disease 2">Disease 2</option>
+                    </select>
+                </div>
+
+                <div class="right">
+
+                    <label for="others">HbsAg hcv hIV</label>
+                    <select name="others" id="others" required>
+                        <option value="" disabled selected>HbsAg hcv hIV</option>
+                        <option value="Disease 1">Disease 1</option>
+                        <option value="Disease 2">Disease 2</option>
+                    </select>
+
+                    <label for="bleeding-disorder">Allergies</label>
+                    <select name="allergies" id="allergies" required>
+                        <option value="" disabled selected>Allergies</option>
+                        <option value="4">Province 4</option>
+                        <option value="5">Province 5</option>
+                        <option value="6">Province 6</option>
+                        <option value="7">Province 7</option>
+                    </select>
+
+                    <label for="bleeding-disorder">Bleeding disorder</label>
+                    <select name="bleeding-disorder" id="bleeding-disorder" required>
+                        <option value="" disabled selected>Bleeding disorder</option>
+                        <option value="4">Province 4</option>
+                        <option value="5">Province 5</option>
+                        <option value="6">Province 6</option>
+                        <option value="7">Province 7</option>
+                    </select>
+
+
+                    <label for="other-diseases">Other Diseases(if any)</label>
+                    <input type="other-diseases" id="other-diseases" name="other-diseases"
+                        placeholder="Leave a note about disease, if any">
+
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+    <footer>
+        <div class="data">
+            <div class="slogan">
+                <span>“Blood Donation Costs You Nothing,</span> But It Can Mean The World To Someone In Need.”
+            </div>
+            <div class="row">
+                <div class="left">
+                    <h2><span>HELP SAVE A LIFE</span></h2>
+                    <h2>GIVE THE GIFT OF BLOOD</h2>
+                    <div class="buttons">
+                        <button type="button"><span></span><a href="donate.html">DONATE</a></button>
+                        <button type="button"><span></span><a href="request.html">REQUEST</a></button>
+                    </div>
+                    <div class="empty-space">
+                        <br><br>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="./../images/blood.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="details">
+            <div class="left">
+                <img src="./../images/logo1.png" alt="">
+                <p>Life Saver is a blood donation site. It is made with the vision to help people in need. To help the
+                    patient’s family
+                    and worrying about finding the blood, Life Saver is made.
+                </p>
+            </div>
+            <div class="middle">
+                <h2>Quick Links</h2>
+                <a href="about.html">About</a>
+                <a href="donate.html">Donate</a>
+                <a href="request.html">Request</a>
+            </div>
+            <div class="right">
+                <h2>Quick Links</h2>
+                <div class="name">
+                    <i class="fa-solid fa-user"></i> &nbsp; Life saver
+                </div>
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i> &nbsp; <a href="#">999999999</a>
+                </div>
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i> &nbsp; <a
+                        href="#">contact@Lifesaver.org</a>
+                </div>
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i> &nbsp; <a href="#"
+                        target="_blank" rel="noopener noreferrer">Lucknow, UP</a>
+                </div>
+
+            </div>
+        </div>
+        <hr style="width: 90%; margin: 10px;">
+        <div class="copyright" style="margin: 30px;">
+            <p>Copyright &copy; 2024 | Akash Chawdhery | All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- province Script -->
+    <script>
+        var province = document.getElementById('province'),
+            cityDropdown = document.getElementById('city');
+
+        province.addEventListener('change', provinceSelected);
+
+        function provinceSelected() {
+            var cities = [];
+            cityDropdown.innerHTML = `<option value="" disabled selected>Select your city</option>`;
+            cityDropdown.value = '';
+            fetch(`https://indialocation.com/api/v1/province/${province.value}/cities`, {
+                method: 'GET',
+                headers: new Headers({
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer 10123a45-3bc7-4c96-ba28-ee4c809fae101'
+                })
+            }
+            ).then(response => response.json())
+                .then(list => {
+                    list.forEach(item => {
+                        cities.push(item.name);
+                    });
+                    cities.sort().forEach(city => {
+                        var elem = document.createElement('option');
+                        elem.value = city;
+                        elem.innerHTML = city;
+                        cityDropdown.appendChild(elem);
+                    })
+                    cityDropdown.removeAttribute('disabled');
+                });
+        }
+    </script>
+    <!-- form display script  -->
+    <script>
+        var personalForm = document.querySelector('#personal-info'),
+            medicalForm = document.querySelector('#medical-info'),
+            medicalBlock = document.querySelector('.medical-info');
+
+        personalForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            medicalBlock.style.display = "block";
+        })
+    </script>
+    <!-- Date Validator  -->
+    <script>
+        var dob = document.querySelector('#dob');
+        dob.addEventListener('change', checkAge);
+
+        function checkAge(e) {
+            console.log(dob.value);
+            var date = dob.value.split('-'),
+                year = date[0],
+                month = date[1],
+                day = date[2],
+                today = new Date();
+
+            var age = today.getFullYear() - year;
+            var m = today.getMonth() - month;
+            if (m < 0 || (m === 0 && today.getDate() < Date(dob.value))) {
+                age--;
+            }
+            if (age < 18) {
+                alert('You are not eligible to donate blood');
+                dob.value = '';
+            }
+        }
+    </script>
+</body>
+
+</html>
